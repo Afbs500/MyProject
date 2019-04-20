@@ -1,0 +1,5 @@
+CREATE TABLE `empresax`.`Funcao` ( `idFuncao` INT NOT NULL AUTO_INCREMENT , `descriacao` VARCHAR(50) NOT NULL , PRIMARY KEY (`idFuncao`)) ENGINE = InnoDB;
+
+CREATE TABLE `empresax`.`setor` ( `idSetor` INT NOT NULL AUTO_INCREMENT , `sigla` VARCHAR(10) NOT NULL , `nomeSetor` VARCHAR(50) NOT NULL , PRIMARY KEY (`idSetor`)) ENGINE = InnoDB;
+
+CREATE TABLE `empresax`.`funcionario` ( `idFuncionario` INT NOT NULL AUTO_INCREMENT , `nome` VARCHAR(50) NOT NULL , `dataNascimento` DATE NOT NULL , `dataAdmissao` DATE NOT NULL , `salario` DOUBLE NOT NULL , `idSetor` INT NOT NULL , `idFuncao` INT NOT NULL , PRIMARY KEY (`idFuncionario`)) ENGINE = InnoDB;
